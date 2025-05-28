@@ -1,0 +1,20 @@
+try { 
+	webengage.onReady(function () {
+  console.log('============Webengage_READY========' );
+    webengage.notification.onClick(function(data){
+        if(data.notificationId=="173061aa5" && data.actionLink=="https://www.ccbp.in/terms-and-conditions" || data.actionLink=="https://www.ccbp.in/privacy-policy"){
+        webengage.reload();    
+        setTimeout(function(){
+          webengage.notification.render({forcedRender: ["~n56sff"]});
+          console.log('notification renderd from CWC');
+            },2000);
+        }
+    });
+});
+ } catch(e) { 
+ 	if (e instanceof Error) { 
+		var data = e.stack || e.description;
+		data = (data.length > 900 ? data.substring(0, 900) : data);
+	 	webengage.eLog(null, 'error', data, 'cwc-error','cwc', '~5bjl9e6');
+	 }
+ }

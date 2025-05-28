@@ -1,0 +1,55 @@
+.favorites-main {
+  min-height: 100vh;
+  width: 100vw;
+  background: #181824;
+  display: flex;
+  flex-direction: column;
+}
+
+.favorites-wrapper {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.favorites-header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.favorites-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.favorites-section .movies-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .favorites-section .movies-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .favorites-section .movies-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .favorites-section .movies-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.favorites-empty {
+  color: #fff;
+  text-align: center;
+  margin-top: 3rem;
+}

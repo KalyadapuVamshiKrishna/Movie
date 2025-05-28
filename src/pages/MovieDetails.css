@@ -1,0 +1,122 @@
+body {
+  background-color: #0f0c29; /* Dark gradient base */
+  font-family: 'Inter', sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.movie-details-main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.movie-details-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  background: #18122b;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+.movie-details-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.movie-details-header .tagline {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+.movie-details-section {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.movie-details-content {
+  flex: 1 1 500px;
+}
+
+.movie-details-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.movie-details-content p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e5e7eb;
+}
+
+.movie-details-content p strong {
+  color: #ffffff;
+}
+
+.movie-details-poster {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.movie-details-poster img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.add-to-favorites-btn {
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-favorites-btn:hover {
+  background-color: #a78bfa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-details-section {
+    flex-direction: column;
+  }
+
+  .movie-details-poster {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .movie-details-header h1 {
+    font-size: 2rem;
+  }
+
+  .movie-details-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .movie-details-content p {
+    font-size: 0.9rem;
+  }
+
+  .add-to-favorites-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,24 @@
+/* Ensure the app takes full viewport and centers content */
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: #181824; /* fallback background */
+  font-family: 'Inter', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Optional: smooth font rendering */
+body, .App {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optional: remove default margin/padding */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
